@@ -1,0 +1,118 @@
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Homepage */
+.hero {
+  background-image: url(../src/assets/cover/cover-image.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-attachment: scroll;
+  background-position: 80%;
+}
+
+.hero-cta {
+  width: 35%;
+  text-align: right;
+  margin: 3.5%;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.hero-cta h2 {
+  font-style: italic;
+  font-size: 55px;
+  color: var(--primary-color);
+}
+
+
+/* Home Area */
+
+.home-example {
+  position: relative;
+  padding: 0;
+  width: 100%;
+  display: block;
+  cursor: crosshair;
+  overflow: hidden;
+}
+
+.about-content {
+  opacity: 0%;
+  font-size: 18px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #1c87c9;
+  width: 100%;
+  height: 100%;
+}
+
+
+.home-title {
+  padding-top: 5%;
+  color: black;
+  text-shadow: 2px 2px lightgray;
+  text-align: center;
+}
+
+.home-desc {
+  color: white;
+  text-shadow: 2px 2px lightgray;
+  text-align: right;
+  font-style: italic;
+  font-weight: bold;
+  font-size: larger;
+  margin-bottom: 5rem;
+}
+
+/* Nav Area */
+.bg-nav, .bg-footer {
+  background-color: #CAD2C5;
+}
+
+/* Listing Area */
+.item-animation {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.item-animation:hover {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: headShake; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+div .col-md-6 {
+  display: flex;
+  justify-content: center;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  .hero {
+    display: flex;
+    justify-content: center;
+  }
+}
